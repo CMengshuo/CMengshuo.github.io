@@ -1,0 +1,135 @@
+body{
+	font-family: Tahoma, Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
+	line-height: 200%;
+	color: #ffffff;
+	text-align: left;
+	font-size: 1rem;
+}
+
+h1{
+	font-family: Tahoma, Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
+	text-align: center;
+	padding: 5px;
+}
+
+h2{
+	font-family: Tahoma, Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
+	text-align: center;
+	font-size: 4rem;
+}
+
+.content > h2{
+	font-family: Tahoma, Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
+	color: #ffffff;
+	line-height: 150%;
+}
+
+h3{
+	text-align: left;
+	line-height: 150%;
+	margin-bottom: 0;
+}
+
+section::before,
+section::after {
+	position: absolute;
+	content: '';
+	pointer-events: none;
+}
+
+.ss-style-halfcircle::after{
+	left: 50%;
+	z-index: 10;
+	width: 16vmin;
+	height: 16vmin;
+	border-radius: 50%;
+	background: inherit;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.ss-style-halfcircle::after {
+	bottom: -8vmin;
+}
+
+section.main-block{
+  	background: #2D3235;
+  	position: relative;
+}
+
+section.odd-block{
+  	background: #009cff;
+  	position: relative;
+}
+
+.icon-down{
+	position: absolute;
+	color: white;
+	left:50%;
+	bottom: 5vh;
+	transform: translate(-50%,0);
+	font-size: 2vmax;
+}
+
+.icon-center{
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /*16:9*/
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.content > ul > li{
+	padding: 5px 0;
+}
+
+.footer-style{
+	 text-align: center;
+}
+
+.paragraph{
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.tag-center{
+	justify-content: center;
+}
+
+.my-card-style{
+	border-radius: 1%;
+	padding: 5px;
+	margin: 0 0;
+}
+
+.icon-to-videos{
+	color: #ffffff;
+}
+
+.video-center{
+	display:block;
+	margin: 0 auto;
+}
+
+.my-card-title{
+	padding-top: 20px;
+}

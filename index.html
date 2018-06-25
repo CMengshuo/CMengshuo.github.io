@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link href="css/bulma.css" rel="stylesheet">
+    <link href="css/myCSS.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+		integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+		crossorigin="anonymous">
+
+    <title>Mengshuo's Portfolio</title>
+          <!-- Global site tag (gtag.js) - Google Analytics -->
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118783871-1"></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-118783871-1');
+          </script>
+    </head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/modernizr.js"></script>
+<script src="js/pixi.min.js"></script>
+<script src="js/pixi-spine.min.js"></script>
+
+    <body>
+
+    <header>
+        <section id="home" class="hero main-block is-fullheight">
+            <div id="home-div" class="hero-body">
+                <div class="container is-fluid">
+									<div class="columns">
+										<div class="column is-5"></div>
+											<div class="column is-2">
+												<div class="image is-1by1">
+														<figure>
+															<img src="data/me.png">
+														</figure>
+												</div>
+												<div class="column is-5"></div>
+											</div>
+										</div>
+										<h1 class="title has-text-white is-size-3">Mengshuo Chen</h1>
+										<h1 class="subtitle has-text-white is-size-5">Game Developer & Programmer</h1></div>
+                </div>
+                <a href="#introduction" class="smooth-goto"><i class="fa fa-angle-double-down fa-lg icon-down"></i></a>
+            </div>
+        </section>
+    </header>
+
+    <section id="introduction" class="hero main-block is-fullheight section">
+        <div class="hero-body">
+            <div class="container content is-fluid">
+                <div class="columns">
+	                <div class="column is-2"></div>
+
+	                <div class="column is-8">
+	                    <h2 class="title has-text-white is-size-3">Hi.</h2>
+
+	                    <p class="paragraph is-size-5">
+	                    I am an enthusiastic and versatile game programmer, graduated from Western University with a M.Sc degree in computer science.
+	                    </p>
+
+	                    <p class="paragraph is-size-5">
+											Here you can see some of my projects.
+	                    </p>
+	                </div>
+
+	                <div class="column is-2"></div>
+                </div>
+            </div>
+            <a href="#project_management" class="smooth-goto"><i class="fa fa-angle-double-down fa-lg icon-down"></i></a>
+        </div>
+    </section>
+
+		<section id="project_management" class="hero main-block is-fullheight section">
+				<div class="hero-body">
+						<div class="container content is-fluid">
+								<div class="columns">
+									<div class="column is-2"></div>
+
+									<div class="column is-8">
+											<h2 class="title has-text-white">Current Project</h2>
+											<p class="paragraph is-size-5">
+											I am currently developing a 3rd person ARPG in Unity, you can follow the progress of this project through my <a href="https://trello.com/b/00Vo4kbg/skytcher" target = "_blank">Trello board</a>.
+											Also, I post demo of this project on this website from time to time.
+											</p>
+									</div>
+									<div class="column is-2"></div>
+								</div>
+						</div>
+						<a href="#foot_placement" class="smooth-goto"><i class="fa fa-angle-double-down fa-lg icon-down"></i></a>
+				</div>
+		</section>
+
+		<section id="foot_placement" class="section main-block is-fullheight">
+			<div class="columns">
+				<div class="column is-3"></div>
+				<div class="column is-6">
+					<div class="card my-card-style">
+						<h2 class="title my-card-title">
+							Foot Placement System
+						</h2>
+						<div class="card-image">
+							<div class="video-container">
+									<iframe width="100%" height="auto" src="https://www.youtube.com/embed/FvXG02T0Zk8?VQ=HD720" allowfullscreen></iframe>
+							</div>
+						</div>
+						<div class="card-content">
+							<div class="content">
+								<p class="paragraph">
+								This system guides the player to walk through some rough terrains while having proper foot placement. Core features are as follows:
+								<ul>
+										<li>
+										Properly set foot IKWeight to avoid unnatural foot movement
+										</li>
+
+										<li>
+										Adjust positions of colliders to avoid deformation of bones
+										</li>
+								</ul>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column is-3"></div>
+			</div>
+		</section>
+
+		<section id="inventory_system" class="section main-block is-fullheight">
+			<div class="columns">
+				<div class="column is-3"></div>
+				<div class="column is-6">
+					<div class="card my-card-style">
+						<h2 class="title my-card-title">
+						Inventory System
+						</h2>
+						<div class="card-image">
+							<div class="video-container">
+									<iframe width="100%" height="auto" src="https://www.youtube.com/embed/fRnfSTjf6jw?VQ=HD720" allowfullscreen></iframe>
+							</div>
+						</div>
+						<div class="card-content">
+							<div class="content">
+								<p class="paragraph">
+								I am a big fan of The Elder Scroll V: Skyrim, so I implemented a similar inventory system.
+								My framework ensures the implementation of various Skyrim inventory features, including:
+								</p>
+
+								<ul>
+										<li>
+											Equip and unequip items
+										</li>
+
+										<li>
+											Pick up and drop items
+										</li>
+
+										<li>
+											Loot and trade items
+										</li>
+
+										<li>
+											Store items in containers
+										</li>
+
+										<li>
+											Auto unequip sold, looted and dropped items
+										</li>
+
+										<li>
+											View item models in inventory
+										</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column is-3"></div>
+			</div>
+		</section>
+
+		<section id="inventory_extension" class="section main-block is-fullheight">
+			<div class="columns">
+				<div class="column is-3"></div>
+				<div class="column is-6">
+					<div class="card my-card-style">
+						<h2 class="title my-card-title">
+						Unity Extension - Item and Inventory Editor
+						</h2>
+						<div class="card-image">
+							<div class="video-container">
+									<iframe width="100%" height="auto" src="https://www.youtube.com/embed/5a3v43T3-2U?VQ=HD720" allowfullscreen></iframe>
+							</div>
+						</div>
+						<div class="card-content">
+							<div class="content">
+								<p class="paragraph">
+								I developed this editor extension to support data serialization, and easier data manipulation.
+								What I have in mind is to create a tool to modify items and inventories without coding and further editing.
+								</p>
+
+								<p class="paragraph">
+								Key features of this tool are as follows:
+								</p>
+
+								<ul>
+										<li>
+										Serialization of items and inventories data to support save and load games
+										</li>
+
+										<li>
+										Item and inventory data can be modified in both editor mode and play mode
+										</li>
+
+										<li>
+										Delete all related data when an item is deleted from the database to avoid error
+										</li>
+
+										<li>
+										Auto process item models and attach them to inventory camera, then show them properly in inventory Camera
+										</li>
+
+										<li>
+										Support inventory data for prefab object
+										</li>
+
+										<li>
+										Auto create, modify prefab files and organize them for the project
+										</li>
+
+										<li>
+										Auto link prefab files: rename and relocation of prefab files will be relinked to the database
+										</li>
+
+										<li>
+										Auto attach core scripts to items according to item type so they can be properly used
+										</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column is-3"></div>
+			</div>
+		</section>
+
+		<section id="combat_system" class="section main-block is-fullheight">
+			<div class="columns">
+				<div class="column is-3"></div>
+				<div class="column is-6">
+					<div class="card my-card-style">
+						<h2 class="title my-card-title">
+						Reactive Combat System - Hit, Dodge, Block and Spell
+						</h2>
+						<div class="card-image">
+							<div class="video-container">
+									<iframe width="100%" height="auto" src="https://www.youtube.com/embed/WE4npTFeSvc?VQ=HD720" allowfullscreen></iframe>
+							</div>
+						</div>
+						<div class="card-content">
+							<div class="content">
+								<p class="paragraph">
+								Reactive combat system will analyze triggered events and use calculated parameters to blend animations.
+								Such mechanism is used to simulate more realistic hit and block reaction.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column is-3"></div>
+			</div>
+		</section>
+
+		<section id="combat_system_lock" class="section main-block is-fullheight">
+			<div class="columns">
+				<div class="column is-3"></div>
+				<div class="column is-6">
+					<div class="card my-card-style">
+						<h2 class="title my-card-title">
+						Target Locking System
+						</h2>
+						<div class="card-image">
+							<div class="video-container">
+									<iframe width="100%" height="auto" src="https://www.youtube.com/embed/glUzl72t-6w?VQ=HD720" allowfullscreen></iframe>
+							</div>
+						</div>
+						<div class="card-content">
+							<div class="content">
+								<p class="paragraph">
+								When an agent has locked on a target, this agent will use a new coordinate system to calculate movement parameters to blend animations.
+								AI will circle around the player through randomly generated coordinates, using the same system.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column is-3"></div>
+			</div>
+		</section>
+
+		<section id="character_control" class="section main-block is-fullheight">
+			<div class="columns">
+				<div class="column is-3"></div>
+				<div class="column is-6">
+					<div class="card my-card-style">
+						<h2 class="title my-card-title">
+						Character Control System
+						</h2>
+						<div class="card-image">
+							<div class="video-container">
+									<iframe width="100%" height="auto" src="https://www.youtube.com/embed/IJFzz2QgDyM?VQ=HD720" allowfullscreen></iframe>
+							</div>
+						</div>
+						<div class="card-content">
+							<div class="content">
+								<p class="paragraph">
+								The animation package I was using came without a controller (<a href="https://assetstore.unity.com/packages/3d/animations/longsword-animset-pro-92239" target="_blank">Longsword Animset Pro</a>).
+								So I designed and implemented my own character control system in Unity animator.
+								The camera logic was added after the control system is functional. My system covers basic features of an ARPG:
+								</p>
+
+								<ul>
+										<li>
+										Camera following
+										</li>
+
+										<li>
+										Rotate, zoom in and zoom out camera
+										</li>
+
+										<li>
+										Indoor collision check for camera
+										</li>
+
+										<li>
+										Use animation blending and root motion for character movement
+										</li>
+
+										<li>
+										Controller for all humanoid agents
+										</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column is-3"></div>
+			</div>
+		</section>
+
+		<section id="introduction_other_projects" class="hero main-block is-fullheight section">
+        <div class="hero-body">
+            <div class="container content is-fluid">
+                <div class="columns">
+	                <div class="column is-3"></div>
+
+	                <div class="column is-6">
+	                    <h2 class="subtitle has-text-white">
+	                    I list some of my other projects below
+	                    </h2>
+	                </div>
+
+	                <div class="column is-3"></div>
+                </div>
+            </div>
+            <a href="#ogre_opencv" class="smooth-goto"><i class="fa fa-angle-double-down fa-lg icon-down"></i></a>
+        </div>
+    </section>
+
+		<section id="ogre_opencv" class="section main-block is-fullheight">
+			<div class="columns">
+				<div class="column is-3"></div>
+				<div class="column is-6">
+					<div class="card my-card-style">
+						<header class="card-header">
+							<div class="card-header-title">
+								<div class="content">
+									<h3>
+									Use webcam for character control with real time machine learning
+									</h3>
+								</div>
+								</div>
+								<div class="tags">
+									<span class="tag is-info is-medium">C++</span>
+									<span class="tag is-info is-medium">Ogre3d</span>
+									<span class="tag is-info is-medium">OpenCV</span>
+								</div>
+						</header>
+						<div class="card-content">
+							<div class="video-container">
+									<iframe width="100%" height="auto" src="https://www.youtube.com/embed/yrmir29codM?VQ=HD720" allowfullscreen></iframe>
+							</div>
+							<div class="content">
+								<p class="paragraph">
+									I used SVM in OpenCV to implement a machine learning feature in this mini game.
+									The application will guide players to input five different gestures for move forward, move backward, turn left, turn right and stop actions before the main game starts.
+									After training, the application will use the data collected to weight players' gestures captured by webcam during gameplay, serving as a controller.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column is-3"></div>
+			</div>
+		</section>
+
+		<section id="ink_man" class="section main-block is-fullheight">
+			<div class="columns">
+				<div class="column is-3"></div>
+				<div class="column is-6">
+					<div class="card my-card-style">
+						<header class="card-header">
+							<div class="card-header-title">
+								<div class="content">
+									<h3>
+									InkMan
+									</h3>
+								</div>
+							</div>
+							<div class="tags">
+								<span class="tag is-info is-medium">Unity</span>
+								<span class="tag is-info is-medium">C#</span>
+								<span class="tag is-info is-medium">Spine</span>
+							</div>
+						</header>
+						<div class="card-content">
+							<div class="video-container">
+									<iframe width="100%" height="auto" src="https://www.youtube.com/embed/t5gxPE9I9QU?VQ=HD720" allowfullscreen></iframe>
+							</div>
+							<div class="content">
+								<p class="paragraph">
+									A 2D infinite running game designed and coded by me.
+									Players touch the screen to draw stuff in the game, which will be applied with physics.
+									Everything is generated in real time to create a seamless running experience.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column is-3"></div>
+			</div>
+		</section>
+
+		<section id="nano_shock" class="section main-block is-fullheight">
+			<div class="columns">
+				<div class="column is-3"></div>
+				<div class="column is-6">
+					<div class="card my-card-style">
+						<header class="card-header">
+							<div class="card-header-title">
+								<div class="content">
+									<h3>
+									NanoShock
+									</h3>
+								</div>
+							</div>
+							<div class="tags">
+								<span class="tag is-info is-medium">Unity</span>
+								<span class="tag is-info is-medium">C#</span>
+							</div>
+						</header>
+						<div class="card-content">
+							<div class="video-container">
+									<iframe width="100%" height="auto" src="https://www.youtube.com/embed/4dKhRL5Fr7M?VQ=HD720" allowfullscreen></iframe>
+							</div>
+							<div class="content">
+								<p class="paragraph">
+									A classic arcade dodge and survival game coded by me. Player can upgrade themselves by collecting power-ups.
+									The further the player goes into the game, the more challenging the game will be.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column is-3"></div>
+			</div>
+		</section>
+
+		<section id="melty_ice" class="section main-block is-fullheight">
+			<div class="columns">
+				<div class="column is-3"></div>
+				<div class="column is-6">
+					<div class="card my-card-style">
+						<header class="card-header">
+							<div class="card-header-title">
+								<div class="content">
+									<h3>
+									Melty Ice
+									</h3>
+								</div>
+							</div>
+							<div class="tags">
+								<span class="tag is-info is-medium">Unity</span>
+								<span class="tag is-info is-medium">C#</span>
+							</div>
+						</header>
+						<div class="card-content">
+							<div class="video-container">
+									<iframe width="100%" height="auto" src="https://www.youtube.com/embed/jImlhoeJ9RI?VQ=HD720" allowfullscreen></iframe>
+							</div>
+							<div class="content">
+								<p class="paragraph">
+								This is my first game when I am transitioning from C++ to Unity C#. At the time, the designer of the game did not know how to use Unity.
+								As the sole programmer of the team, I had him make maps using 3rd party tools.
+								I took the XML files of maps he provided, parsed them and dynamically reconstructed the map using meshes in Unity.
+								I wrote A star pathfinding algorithms for the AI based on the mesh matrix.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column is-3"></div>
+			</div>
+		</section>
+
+		<section id="beijing_job" class="section main-block is-fullheight">
+			<div class="columns">
+				<div class="column is-3"></div>
+				<div class="column is-6">
+					<div class="card my-card-style">
+						<header class="card-header">
+							<div class="card-header-title">
+								<div class="content">
+									<h3>
+									Gameplay programmer XnetSoft Inc, Beijing, China, 2011 - 2012
+									</h3>
+								</div>
+							</div>
+							<div class="tags">
+								<span class="tag is-info is-medium">C++</span>
+								<span class="tag is-info is-medium">Python</span>
+								<span class="tag is-info is-medium">Ogre3d</span>
+							</div>
+						</header>
+						<div class="card-content">
+							<div class="content">
+								<ul>
+										<li>
+											Files management.
+											I wrote several modules that would process all files in SVN respository submitted by the team,
+											generate the built game, and patches for game clients.
+											I also wrote the module to verify MD5 checksum.
+										</li>
+
+										<li>
+											I developed a 3D physics based game.
+											The game was simple: each mouse click on the character will apply a force to it.
+											Players have to act accordingly to either avoid obstacles, debuff items or get boost items.
+										</li>
+
+										<li>
+											I developed a 3D tower defense game.
+											Players need to gather resources to put defenders on the map to defend against attackers.
+											I added several new gameplay features, including boss fight levels and multiplayer networking module.
+										</li>
+
+										<li>
+											Worked with designers and artists to implement general gameplay mechanics and UI features for other games that the team was working on.
+										</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column is-3"></div>
+			</div>
+		</section>
+
+		<section id="skillsets" class="main-block hero is-fullheight">
+				<div class="hero-body container">
+						<div class="content">
+
+								<div>
+									<h2 class="title has-text-white is-3">Skill Sets</h2>
+								</div>
+
+								<div class="columns">
+									<div class="column is-1"></div>
+									<div class="column is-10">
+											<div class="tags tag-center">
+												<span class="tag is-info is-large">C++</span>
+												<span class="tag is-info is-large">Python</span>
+												<span class="tag is-info is-large">C#</span>
+												<span class="tag is-info is-large">Unity</span>
+												<span class="tag is-info is-large">Javascript</span>
+												<span class="tag is-info is-large">HTML</span>
+												<span class="tag is-info is-large">CSS</span>
+												<span class="tag is-info is-large">OpenGL</span>
+												<span class="tag is-info is-large">Ogre3d</span>
+												<span class="tag is-info is-large">Shader</span>
+												<span class="tag is-info is-large">OOP design</span>
+												<span class="tag is-info is-large">Gameplay Programming</span>
+												<span class="tag is-info is-large">Animation Programming</span>
+												<span class="tag is-info is-large">UI Programming</span>
+												<span class="tag is-info is-large">Tool Programming</span>
+												<span class="tag is-info is-large">Visual Studio</span>
+												<span class="tag is-info is-large">Xcode</span>
+												<span class="tag is-info is-large">Eclipse</span>
+												<span class="tag is-info is-large">MonoDevelop</span>
+												<span class="tag is-info is-large">Atom</span>
+												<span class="tag is-info is-large">Git</span>
+												<span class="tag is-info is-large">TortoiseSVN</span>
+											</div>
+									</div>
+									<div class="column is-1"></div>
+								</div>
+
+								<div>
+									<h2 class="title has-text-white is-3" style="text-decoration: underline;"><a href="download/Resume.pdf" style="color: #ffffff;" target = "_blank">My Resume</a></h2>
+								</div>
+						</div>
+				</div>
+		</section>
+
+    <section id="about" class="footer main-block footer-style">
+        <div class="content">
+        <p>
+        Designed and coded by Mengshuo Chen. Copyright © Mengshuo Chen 2018.
+        </p>
+        </div>
+    </section>
+
+    </body>
+</html>

@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link href="css/bulma.css" rel="stylesheet">
+    <link href="css/myCSS.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+		integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+		crossorigin="anonymous">
+
+    <title>陈孟硕</title>
+          <!-- Global site tag (gtag.js) - Google Analytics -->
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118783871-1"></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-118783871-1');
+          </script>
+    </head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/modernizr.js"></script>
+<script src="js/pixi.min.js"></script>
+<script src="js/pixi-spine.min.js"></script>
+
+    <body>
+
+    <header>
+        <section id="home" class="hero main-block is-fullheight">
+            <div id="home-div" class="hero-body">
+                <div class="container is-fluid">
+									<div class="columns">
+										<div class="column is-5"></div>
+											<div class="column is-2">
+												<div class="image is-1by1">
+														<figure>
+															<img src="data/me.png">
+														</figure>
+												</div>
+												<div class="column is-5"></div>
+											</div>
+										</div>
+										<h1 class="title has-text-white is-size-3">陈孟硕</h1>
+										<h1 class="subtitle has-text-white is-size-5">程序员 & 游戏开发</h1></div>
+                </div>
+                <a href="#introduction" class="smooth-goto"><i class="fa fa-angle-double-down fa-lg icon-down"></i></a>
+            </div>
+        </section>
+    </header>
+
+    <section id="introduction" class="hero main-block is-fullheight section">
+        <div class="hero-body">
+            <div class="container content is-fluid">
+                <div class="columns">
+	                <div class="column is-2"></div>
+
+	                <div class="column is-8">
+	                    <h2 class="title has-text-white is-size-2">我</h2>
+
+	                    <p class="paragraph is-size-5">
+	                    我是一名充满激情的程序员，毕业于加拿大Western University计算机专业。我涉猎广泛，热爱游戏开发。这里是我的游戏作品集，你可以找到一些我的作品。
+	                    </p>
+	                </div>
+
+	                <div class="column is-2"></div>
+                </div>
+            </div>
+            <a href="#project_management" class="smooth-goto"><i class="fa fa-angle-double-down fa-lg icon-down"></i></a>
+        </div>
+    </section>
+
+		<section id="project_management" class="hero main-block is-fullheight section">
+        <div class="hero-body">
+            <div class="container content is-fluid">
+                <div class="columns">
+	                <div class="column is-2"></div>
+
+	                <div class="column is-8">
+	                    <h2 class="title has-text-white is-size-2">目前项目</h2>
+
+	                    <p class="paragraph is-size-5">
+	                    目前我正在用Unity开发一款第三人称动作RPG游戏，我会不定期的在这里更新我的项目进度。
+											你也可以在我的<a href="https://trello.com/b/00Vo4kbg/skytcher" target = "_blank">Trello Board</a>上关注该项目详细进展。
+	                    </p>
+	                </div>
+
+	                <div class="column is-2"></div>
+                </div>
+            </div>
+						<a href="#foot_placement" class="smooth-goto"><i class="fa fa-angle-double-down fa-lg icon-down"></i></a>
+        </div>
+    </section>
+
+		<section id="foot_placement" class="section main-block is-fullheight">
+			<div class="columns">
+				<div class="column is-3"></div>
+				<div class="column is-6">
+					<div class="card my-card-style">
+						<h2 class="title my-card-title">
+						足部ik放置系统
+						</h2>
+						<div class="card-image">
+							<video class="video-center" controls>
+  							<source src="data/FootIK.mp4" type="video/mp4">
+							</video>
+						</div>
+						<div class="card-content">
+							<div class="content">
+								<p class="paragraph">
+								实现人物在静止和运动中足部与复杂环境的自然贴合。该系统会自动调节碰撞胶囊，确保人物在静止时能正确的放置双脚并避免骨骼变形。ik权重会根据运动的状态而改变，避免不自然的足部动作。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column is-3"></div>
+			</div>
+		</section>
+
+		<section id="combat_system_block_dodge" class="section main-block is-fullheight">
+			<div class="columns">
+				<div class="column is-3"></div>
+				<div class="column is-6">
+					<div class="card my-card-style">
+						<h2 class="title my-card-title">
+						反应式近战系统 - 格挡，击中，闪避
+						</h2>
+						<div class="card-image">
+							<video class="video-center" controls>
+	  						<source src="data/CombatBlockDodge.mp4" type="video/mp4">
+							</video>
+						</div>
+						<div class="card-content">
+							<div class="content">
+								<p class="paragraph">
+								模仿巫师3做的反应式近战系统。该系统会分析对方的攻击部位参数，在动作混合树执行相应的动作。未来计划是将击中mecanim和ragdoll混合做出更自然的受伤动作以及使用ik做出更加真实的格挡机制。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column is-3"></div>
+			</div>
+		</section>
+
+		<section id="inventory_extension" class="section main-block is-fullheight">
+			<div class="columns">
+				<div class="column is-3"></div>
+				<div class="column is-6">
+					<div class="card my-card-style">
+						<h2 class="title my-card-title">
+						扩展 - 物品及背包编辑器
+						</h2>
+						<div class="card-image">
+							<video class="video-center" controls>
+								<source src="data/EditorExtension.mp4" type="video/mp4">
+							</video>
+						</div>
+						<div class="card-content">
+							<div class="content">
+								<p class="paragraph">
+								我开发的一款扩展编辑器。主要应用于实时模式及编辑模式下对于游戏物品及背包的数据改动。该工具依赖工程对场景物体和prefab的独特id对数据进行序列化。
+								</p>
+
+								<p class="paragraph">
+								此扩展支持以下操作：
+								</p>
+
+								<ul>
+										<li>
+										数据序列化以支持游戏的存档和读档功能
+										</li>
+
+										<li>
+										在unity实时及编辑模式下对游戏物品及背包数据进行修改
+										</li>
+
+										<li>
+										确保删除物品数据时同时删除所有关联数据，避免数据错误
+										</li>
+
+										<li>
+										自动处理物体模型并正确的显示在背包的物品预览界面中
+										</li>
+
+										<li>
+										支持对prefab预设背包默认物品
+										</li>
+
+										<li>
+										自动创建，修改游戏物品prefab文件，并进行分类存放
+										</li>
+
+										<li>
+										自动关联prefab数据：对prefab的重命名及存放位置修改不会影响物品对prefab的依赖
+										</li>
+
+										<li>
+										自动添加相应类别的物品类逻辑，比如防具类的骨骼贴合，使物品能被正确使用
+										</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column is-3"></div>
+			</div>
+		</section>
+
+		<section id="combat_system_spell" class="section main-block is-fullheight">
+			<div class="columns">
+				<div class="column is-3"></div>
+				<div class="column is-6">
+					<div class="card my-card-style">
+						<h2 class="title my-card-title">
+						战斗系统 - 近距离法术
+						</h2>
+						<div class="card-image">
+							<video class="video-center" controls>
+	  						<source src="data/SpellSystem.mp4" type="video/mp4">
+							</video>
+						</div>
+						<div class="card-content">
+							<div class="content">
+								<p class="paragraph">
+								法术系统目前被集成在背包系统中，因此目前被视为“物品”，能被物品及背包编辑器编辑。法术系统不是我现在的重点开发方向，以后会被分离出来。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column is-3"></div>
+			</div>
+		</section>
+
+		<section id="loot_trade_system" class="section main-block is-fullheight">
+			<div class="columns">
+				<div class="column is-3"></div>
+				<div class="column is-6">
+					<div class="card my-card-style">
+						<h2 class="title my-card-title">
+						交易及战利品系统
+						</h2>
+						<div class="card-image">
+							<video class="video-center" controls>
+								<source src="data/LootAndTrade.mp4" type="video/mp4">
+							</video>
+						</div>
+						<div class="card-content">
+							<div class="content">
+								<p class="paragraph">
+								交易和战利品系统是背包系统的扩展：系统会读取被交互物体的背包信息并处理。一切有背包组件的物体都可以被玩家交互。目前支持以下功能：
+								</p>
+
+								<ul>
+									<li>
+										与NPC交易
+									</li>
+
+									<li>
+										从NPC身上掠夺，偷窃物品
+									</li>
+
+									<li>
+										与环境中的容器进行交互
+									</li>
+
+									<li>
+										自动卸下被卖出，偷盗，掠夺和丢弃的装备
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column is-3"></div>
+			</div>
+		</section>
+
+		<section id="inventory_system" class="section main-block is-fullheight">
+			<div class="columns">
+				<div class="column is-3"></div>
+				<div class="column is-6">
+					<div class="card my-card-style">
+						<h2 class="title my-card-title">
+						背包系统
+						</h2>
+						<div class="card-image">
+							<video class="video-center" controls>
+  							<source src="data/Inventory.mp4" type="video/mp4">
+							</video>
+						</div>
+						<div class="card-content">
+							<div class="content">
+								<p class="paragraph">
+								仿上古卷轴：天际SkyUI mod做的列表式背包系统。具备传统背包系统的基本功能。
+								</p>
+
+								<ul>
+										<li>
+										装备和卸下装备
+										</li>
+
+										<li>
+										捡起和丢弃装备
+										</li>
+
+										<li>
+									  自动识别玩家在场景中拖拽到人物身上的装备，进行骨骼匹配并添加到人物背包中
+										</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column is-3"></div>
+			</div>
+		</section>
+
+		<section id="combat_system_movement" class="section main-block is-fullheight">
+			<div class="columns">
+				<div class="column is-3"></div>
+				<div class="column is-6">
+					<div class="card my-card-style">
+						<h2 class="title my-card-title">
+						近战系统 - 锁定目标
+						</h2>
+						<div class="card-image">
+							<video class="video-center" controls>
+	  						<source src="data/BattleMovement.mp4" type="video/mp4">
+							</video>
+						</div>
+						<div class="card-content">
+							<div class="content">
+								<p class="paragraph">
+								类似于巫师3的目标锁定系统，但玩家可手动切换并解除锁定目标。锁定后人物控制系统以被锁定目标为控制坐标系进行动作混合。AI也采用该锁定系统执行动作逻辑。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column is-3"></div>
+			</div>
+		</section>
+
+		<section id="character_control" class="section main-block is-fullheight">
+			<div class="columns">
+				<div class="column is-3"></div>
+				<div class="column is-6">
+					<div class="card my-card-style">
+						<h2 class="title my-card-title">
+						角色控制系统
+						</h2>
+						<div class="video-container">
+								<iframe src="//player.bilibili.com/player.html?aid=25363732&cid=43082476&page=1" width="100%" height="auto" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+						</div>
+						<div class="card-content">
+							<div class="content">
+								<p class="paragraph">
+								主要动作包来自于 (<a href="https://assetstore.unity.com/packages/3d/animations/longsword-animset-pro-92239" target="_blank">Longsword Animset Pro</a>)。
+								该包不带控制器，所以本项目的控制系统及摄像机逻辑是由我开发。主要功能如下：
+								</p>
+
+								<ul>
+										<li>
+										摄像机的跟随，旋转，放大和缩小
+										</li>
+
+										<li>
+										摄像机的室内碰撞检测及处理
+										</li>
+
+										<li>
+										适用于人形生物的Mecanim的混合树控制器
+										</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column is-3"></div>
+			</div>
+		</section>
+
+		<section id="introduction_other_projects" class="hero main-block is-fullheight section">
+        <div class="hero-body">
+            <div class="container content is-fluid">
+                <div class="columns">
+	                <div class="column is-3"></div>
+
+	                <div class="column is-6">
+	                    <h2 class="title has-text-white">
+	                    一些我以前做过的项目
+	                    </h2>
+	                </div>
+
+	                <div class="column is-3"></div>
+                </div>
+            </div>
+            <a href="#ogre_opencv" class="smooth-goto"><i class="fa fa-angle-double-down fa-lg icon-down"></i></a>
+        </div>
+    </section>
+
+		<section id="ogre_opencv" class="section main-block is-fullheight">
+			<div class="columns">
+				<div class="column is-3"></div>
+				<div class="column is-6">
+					<div class="card my-card-style">
+						<header class="card-header">
+							<div class="card-header-title">
+								<div class="content">
+									<h3>
+									基于电脑摄像头的机器学习迷你游戏
+									</h3>
+								</div>
+								</div>
+								<div class="tags">
+									<span class="tag is-info is-medium">C++</span>
+									<span class="tag is-info is-medium">Ogre3D</span>
+									<span class="tag is-info is-medium">OpenCV</span>
+									<span class="tag is-info is-medium">Machine Learning</span>
+								</div>
+						</header>
+						<div class="card-content">
+							<div class="video-container">
+									<iframe width="100%" height="auto" src="https://www.youtube.com/embed/yrmir29codM?VQ=HD720" allowfullscreen></iframe>
+							</div>
+							<div class="content">
+								<p class="paragraph">
+									我基于Ogre3D渲染引擎开发的一款迷你机器学习程序。该程序依赖电脑摄像头在游戏前通过截频记录用户对于不同控制定义的图像，通过提取特征向量并使用SVM分类储存数据。
+									在游戏中，程序会根据所观察到物体进行数据权重匹配来执行相应的操作。因为基于Ogre3d，该游戏的物理检测和碰撞模拟，粒子系统和光照均由我实现。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column is-3"></div>
+			</div>
+		</section>
+
+		<section id="ink_man" class="section main-block is-fullheight">
+			<div class="columns">
+				<div class="column is-3"></div>
+				<div class="column is-6">
+					<div class="card my-card-style">
+						<header class="card-header">
+							<div class="card-header-title">
+								<div class="content">
+									<h3>
+									InkMan
+									</h3>
+								</div>
+							</div>
+							<div class="tags">
+								<span class="tag is-info is-medium">Unity</span>
+								<span class="tag is-info is-medium">C#</span>
+								<span class="tag is-info is-medium">Spine</span>
+							</div>
+						</header>
+						<div class="card-content">
+							<div class="video-container">
+									<iframe width="100%" height="auto" src="https://www.youtube.com/embed/t5gxPE9I9QU?VQ=HD720" allowfullscreen></iframe>
+							</div>
+							<div class="content">
+								<p class="paragraph">
+								由我设计和开发的一款2D无限奔跑游戏。该游戏的特点是物理笔触：玩家在屏幕上画出的笔触会与环境产生物理碰撞，从而帮助玩家克服障碍物。
+								游戏中所有地形，怪物和物品均为实时随机生成，确保无缝的游戏体验。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column is-3"></div>
+			</div>
+		</section>
+
+		<section id="nano_shock" class="section main-block is-fullheight">
+			<div class="columns">
+				<div class="column is-3"></div>
+				<div class="column is-6">
+					<div class="card my-card-style">
+						<header class="card-header">
+							<div class="card-header-title">
+								<div class="content">
+									<h3>
+									NanoShock
+									</h3>
+								</div>
+							</div>
+							<div class="tags">
+								<span class="tag is-info is-medium">Unity</span>
+								<span class="tag is-info is-medium">C#</span>
+							</div>
+						</header>
+						<div class="card-content">
+							<div class="video-container">
+									<iframe width="100%" height="auto" src="https://www.youtube.com/embed/4dKhRL5Fr7M?VQ=HD720" allowfullscreen></iframe>
+							</div>
+							<div class="content">
+								<p class="paragraph">
+								这款躲避生存类游戏由<a href="https://www.facebook.com/profile.php?id=890660156" target = "_blank">Brian Moore</a>设计并创作游戏资源，由我开发完成。
+								在游戏中玩家可以装备不同功能的能量球使自己更为强大，从而生存更久。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column is-3"></div>
+			</div>
+		</section>
+
+		<section id="melty_ice" class="section main-block is-fullheight">
+			<div class="columns">
+				<div class="column is-3"></div>
+				<div class="column is-6">
+					<div class="card my-card-style">
+						<header class="card-header">
+							<div class="card-header-title">
+								<div class="content">
+									<h3>
+									Melty Ice
+									</h3>
+								</div>
+							</div>
+							<div class="tags">
+								<span class="tag is-info is-medium">Unity</span>
+								<span class="tag is-info is-medium">C#</span>
+							</div>
+						</header>
+						<div class="card-content">
+							<div class="video-container">
+									<iframe width="100%" height="auto" src="https://www.youtube.com/embed/jImlhoeJ9RI?VQ=HD720" allowfullscreen></iframe>
+							</div>
+							<div class="content">
+								<p class="paragraph">
+								这是我开发的第一款Unity游戏。美术资源和游戏设计来自<a href="https://www.facebook.com/profile.php?id=890660156" target = "_blank">Brian Moore</a>。
+								我在这项工程中确定了产品的工作流程和工具使用，使我的组员能使用第三方工具制作关卡地图并导入Unity发布而无需我的代码维护。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column is-3"></div>
+			</div>
+		</section>
+
+		<section id="beijing_job" class="section main-block is-fullheight">
+			<div class="columns">
+				<div class="column is-3"></div>
+				<div class="column is-6">
+					<div class="card my-card-style">
+						<header class="card-header">
+							<div class="card-header-title">
+								<div class="content">
+									<h3>
+									游戏程序员 - 北京侠客行网络技术有限公司，2011 - 2012
+									</h3>
+								</div>
+							</div>
+							<div class="tags">
+								<span class="tag is-info is-medium">C++</span>
+								<span class="tag is-info is-medium">Python</span>
+								<span class="tag is-info is-medium">Ogre3d</span>
+							</div>
+						</header>
+						<div class="card-content">
+							<div class="content">
+								我在该公司开发3D网游《鼠鼠奇遇记》时任职游戏程序员，我的工作职责如下：
+								<ul>
+										<li>
+										负责项目的版本管理，责任包括编写模块处理项目版本的内容差异，生成补丁包与游戏发布版本并部署于服务器上。编写模块对更新后的客户端进行md5校验。
+										</li>
+
+										<li>
+										负责项目中迷你游戏《逃出古堡》的开发，实现在Ogre3D上的物理碰撞模拟和检测，并按策划需求添加游戏功能。
+										</li>
+
+										<li>
+										负责项目中迷你游戏《保护家园》的开发，该游戏是3D版本的植物大战僵尸。我的工作是实现单人，多人游戏逻辑，和特殊Boss关卡的开发。
+										</li>
+
+										<li>
+										与组内策划和美术合作，实现游戏大厅的UI逻辑和其他迷你游戏的道具使用和游戏UI间的消息传递
+										</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column is-3"></div>
+			</div>
+		</section>
+
+		<section id="skillsets" class="main-block hero is-fullheight">
+				<div class="hero-body container">
+						<div class="content">
+
+								<div>
+									<h2 class="title has-text-white is-3">技能</h2>
+								</div>
+
+								<div class="columns">
+									<div class="column is-1"></div>
+									<div class="column is-10">
+											<div class="tags tag-center">
+												<span class="tag is-info is-large">C++</span>
+												<span class="tag is-info is-large">Python</span>
+												<span class="tag is-info is-large">C#</span>
+												<span class="tag is-info is-large">Unity</span>
+												<span class="tag is-info is-large">Javascript</span>
+												<span class="tag is-info is-large">HTML</span>
+												<span class="tag is-info is-large">CSS</span>
+												<span class="tag is-info is-large">OpenGL</span>
+												<span class="tag is-info is-large">Ogre3D</span>
+												<span class="tag is-info is-large">Shader</span>
+												<span class="tag is-info is-large">面对对象设计</span>
+												<span class="tag is-info is-large">游戏内容编程</span>
+												<span class="tag is-info is-large">动画编程</span>
+												<span class="tag is-info is-large">UI编程</span>
+												<span class="tag is-info is-large">工具编程</span>
+												<span class="tag is-info is-large">Visual Studio</span>
+												<span class="tag is-info is-large">Xcode</span>
+												<span class="tag is-info is-large">Eclipse</span>
+												<span class="tag is-info is-large">MonoDevelop</span>
+												<span class="tag is-info is-large">Atom</span>
+												<span class="tag is-info is-large">Github</span>
+												<span class="tag is-info is-large">TortoiseSVN</span>
+											</div>
+									</div>
+									<div class="column is-1"></div>
+								</div>
+
+								<div>
+									<h2 class="title has-text-white is-3" style="text-decoration: underline;"><a href="download/Resume.pdf" style="color: #ffffff;" target = "_blank">我的简历</a></h2>
+								</div>
+						</div>
+				</div>
+		</section>
+
+    <section id="about" class="footer main-block footer-style">
+        <div class="content">
+        <p>
+        Designed and coded by Mengshuo Chen. Copyright © Mengshuo Chen 2018.
+        </p>
+        </div>
+    </section>
+
+    </body>
+</html>
