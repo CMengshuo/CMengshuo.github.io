@@ -1,6 +1,6 @@
 
 jQuery(document).ready(function($){
-//
+// master
 // 	$("#showBattleProject").click(function() {
 //   	$("#unity_battle_details").addClass("is-active");
 // 	});
